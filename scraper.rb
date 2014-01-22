@@ -61,7 +61,7 @@ module PdfHelper
       new_x = find_column_no(columns, left, right)
       # If we're back at the beginning of a row this is a new row
       y += 1 if new_x == 0 && x > 0
-      x = new_x
+      x = new_x unless new_x.nil? 
       [x, y, t.inner_text]
     end
   end
