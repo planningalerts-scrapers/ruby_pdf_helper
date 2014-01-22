@@ -1,3 +1,4 @@
+require 'scraperwiki'
 require "tempfile"
 
 # Make a pdftoxml method just like in Python
